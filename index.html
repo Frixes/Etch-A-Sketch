@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ondragstart="return false;" ondrop="return false;">
+        <div class="menu">
+            <div><button>rainbow</button></div>
+            <div><button id="eraser-btn">eraser</button></div>
+            <div><button>toggle grid border</button></div>
+            <div><button id="clear-btn">clear</button></div>
+            <div id="value"></div>
+            <div><input type="range" min="1" value="32" max="64" id="slider"></div>
+            <div><input type="color" class="color-pick"></div>
+        </div>
+        <div id="container"></div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
