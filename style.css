@@ -1,6 +1,29 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    gap: 30px;
+    padding: 30px;
+    flex-basis: 250px;
+} 
+
+.menu > div > button {
+    width: 200px;
+    height: 40px;
 }
 
 #container > div {
@@ -15,11 +38,19 @@ body {
 
 }
 
-.color-pick {
-    margin: 0;
-    padding: 0;
-    border: 0;
+.color-range {
+    display: block;
+    
     width: 100px;
-    height: 100px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
 }
 
+.pen-color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
