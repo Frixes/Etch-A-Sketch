@@ -4,10 +4,16 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    font-family: "boba";
+    background-color: #FFF7D4;
+}
+
+.title {
+    font-size: 48px;
 }
 
 .menu {
@@ -15,20 +21,33 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
+    background-color: #FFD95A;
+    border-radius: 4px;
     gap: 30px;
     padding: 30px;
     flex-basis: 250px;
+    height: 300px;
 } 
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
 .menu > div > button {
     width: 200px;
     height: 40px;
+    border-radius: 4px;
+    font-family: "boba";
 }
 
 #container > div {
     border: 1px solid;
     border-color: black;
+    background-color: white;
 }
 
 #container {
@@ -40,12 +59,11 @@ body {
 
 .color-range {
     display: block;
-    
+    border: 2px solid black;
+    border-radius: 4px;
     width: 100px;
     padding: 0;
     margin: 0;
-    border: none;
-    outline: none;
 }
 
 .pen-color {
@@ -53,4 +71,20 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.grid-slider-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: white;
+}
+
+@font-face {
+    font-family: "boba";
+    src: url("./Fonts/Boba Cups.ttf");
 }

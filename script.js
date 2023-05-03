@@ -26,7 +26,7 @@ function makeGrid(size) {
 }
 
 slider.oninput = function() {
-    value.innerHTML = slider.value;
+    value.innerHTML = `Grid Size : ${slider.value}`;
     size = slider.value;
     deleteGrid();
     makeGrid(size);
@@ -59,7 +59,7 @@ eraserBtn.addEventListener("click", function() {
         rainbowBtn.style.background = "white";
         eraseIsTrue = false;
     } else {
-        eraserBtn.style.background = "red";
+        eraserBtn.style.background = "#A6D0DD";
         rainbowBtn.style.background = "white";
         rainbowIsTrue = false;
         eraseIsTrue = true;
@@ -71,7 +71,7 @@ rainbowBtn.addEventListener("click", function() {
         eraserBtn.style.background = "white";
         rainbowIsTrue = false;
     } else {
-        rainbowBtn.style.background = "red";
+        rainbowBtn.style.background = "#A6D0DD";
         eraserBtn.style.background = "white";
         eraseIsTrue = false;
         rainbowIsTrue = true;
@@ -140,7 +140,7 @@ function buttonChangeColor() {
     }
 }
 
-value.innerHTML = slider.value;
+value.innerHTML = `Grid Size : ${slider.value}`;
 makeGrid(size);
 warna(size);
 
